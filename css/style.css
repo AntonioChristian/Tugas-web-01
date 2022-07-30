@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.medsos {
+    padding: 8px 0;
+    background-color: yellowgreen;
+}
+
+.medsos ul li{
+    display: inline-block;
+    color: blue;
+    margin-right: 10px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+header h1{
+    float: left;
+    padding: 25px 0;
+    color: rgb(22, 150, 122);
+}
+
+header ul{
+    float: right;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    padding: 20px 25px;
+    display: inline-block;
+}
+
+header ul li a:hover{
+    background-color: brown;
+    color: antiquewhite;
+}
+
+.active{
+    background-color: brown;
+    color: antiquewhite;
+}
+
+.banner{
+    height: 70vh;
+    background-image: url("../image/ade.jpeg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.banner h2{
+    color: aliceblue;
+    padding: 25px 25px;
+    border: 4px solid #fff;
+}
+
+
+section{
+    padding:50px 0;
+}
+
+section h3{
+    text-align: center;
+    padding: 25px 0;
+    color: rgb(230, 34, 44);
+}
+
+.about{
+    word-spacing: 4px;
+    line-height: 30px;
+    color: black;
+    text-align: center;
+}
+
+.skill{
+    background-color: rgb(221, 221, 240);
+}
+
+.box{
+    color: rgb(9, 10, 10);
+}
+
+.box:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box .col-3{
+    width: 30%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.icon{
+    width: 90px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.box .col-3 h4{
+    margin: 40px 0;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+}
+
+.bg-loader{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loader .loader{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-top-color: blue;
+    border-right-color: blue;
+    border-bottom-color: blue;
+    animation: mutar .9s linear infinite;
+}
+
+@keyframes mutar{
+    100% {
+        transform: rotate(360deg);
+    }
+}
